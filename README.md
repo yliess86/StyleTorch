@@ -16,6 +16,17 @@ pip3 install -r requirements.txt
 
 ## Usage
 
+The repository provides an usage application to apply style transfer on multiple screens and mutliple camera feeds.
+
+```bash
+python3 -m styletorch\
+  -m [Path to Model 0] [Path to Model 1] [...]\
+  -c [Camera Id 0] [Camera Id 1] [...]
+```
+
+![ Ex ]( ./models/hokusai.png )
+
+
 ### Training
 
 ```bash
@@ -39,18 +50,6 @@ python3 -m styletorch.train\
   -d [New Model Path]\
   -q # Jit & Quantize the model
 ```
-
-## Usage
-
-The repository provides an usage application to apply style transfer on multiple screens and mutliple camera feeds.
-
-```bash
-python3 -m styletorch\
-  -m [Path to Model 0] [Path to Model 1] [...]\
-  -c [Camera Id 0] [Camera Id 1] [...]
-```
-
-![ Ex ]( ./models/hokusai.png )
 
 ## References
 
